@@ -58,3 +58,4 @@ with sqlite3.connect(db_path) as db:
     query = """INSERT INTO payments (id, amount, payment_date, expense_id) VALUES (?, ?, ?, ?)"""
     cursor.executemany(query, insert_payments)
     db.commit()
+
